@@ -1,0 +1,52 @@
+/* LAYOUT E DETTAGLI */
+/* HEADER */
+.header {
+  background-color: #f9f9f9d2;
+  padding: 20px 30px;
+}
+
+.header > h2 {
+  font-size: 3rem;
+}
+
+/* MAIN */
+.main {
+  margin-top: 50px;
+  max-width: 800px;
+}
+
+.main > * {
+  margin: 20px 0;
+}
+
+.button-container {
+  display: flex;
+  gap: 20px;
+}
+
+.button {
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: #007bfd;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.button.active {
+  background-color: goldenrod;
+  color: black;
+  border: black 1px solid;
+}
+
+/* CARD */
+.card {
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.card-title {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
