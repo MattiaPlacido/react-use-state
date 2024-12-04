@@ -1,4 +1,5 @@
 import { languages } from "./data/languages";
+import { posts } from "./data/posts";
 import { useState } from "react";
 
 export default function Main() {
@@ -42,6 +43,15 @@ export default function Main() {
         <p className="card-description">
           {activeLanguage ? activeLanguage.description : ""}
         </p>
+      </div>
+      <br></br>
+      <div className="posts-container">
+        {posts.map((post) => (
+          <div className="card" id={post.id}>
+            <h5 className="card-title">{post.title}</h5>
+            <p className="card-description">{post.content}</p>
+          </div>
+        ))}
       </div>
     </div>
   );
